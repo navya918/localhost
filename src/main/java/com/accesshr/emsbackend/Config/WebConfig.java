@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**") // Adjust the mapping as needed
-                .allowedOrigins("https://web-app-0101-babdbnf3bnchejd8.canadacentral-01.azurewebsites.net") // Your frontend URL
+                .allowedOrigins("https://localhost:3000") // Your frontend URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Allowed methods
                 .allowedHeaders("*") // Allow all headers
                 .allowCredentials(true); // Allow credentials (cookies, authorization headers, etc.)
